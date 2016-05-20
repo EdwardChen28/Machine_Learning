@@ -1,0 +1,5 @@
+- use the popular LIBSVM format for training and test data file 
+- each line contains an instance, which takes the following format: <label><index1>:<value1><index2>:<value2> ...
+- <label> is an integer indicating the class label (+1 or -1 in this case). 
+- Each pair <index>:<value> provides an attribute-value pair: <index> is an integer starting from 1 indicating the index of the attribute and <value> is an integer (only consider categorical attributes). 
+- LIBSVM format uses sparse representation. For a data instance (one line), if the value of an attribute is 0, this attribute is omitted in this line. It does not mean this attribute is missing. 
